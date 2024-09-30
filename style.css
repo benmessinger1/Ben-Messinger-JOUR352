@@ -1,7 +1,7 @@
 /* syles for my resume */
 
 
-BODY {
+#description #date  {
     font-family:'Open Sans', arial, sans-serif ;
     font-size: 1em;
     color:#444;
@@ -12,21 +12,23 @@ BODY {
 width:100%;
 max-width:1200px;
 margin:0 auto;
+text-align:center;
+
 }
 /* Name */
 #name {
     font-size:3em;
     text-transform:uppercase;
     text-align:center;
-    border-bottom: 1px solid #33485e;
+    border-bottom: 1px solid #4D0000;
     width:60%;
     min-width:300px;
     margin:0 auto;
 }
 
 
-strong {
-    color:#33485e
+strong{
+    color:#4D0000
     text-transformation:uppercase;
     font-size:1.5em;
 }
@@ -35,7 +37,7 @@ strong {
 .sectionheader {
     font-size: 1.5em;
     text-transform:uppercase;
-    background-color: #33485e;
+    background-color: #4D0000;
     color:#fff;
     font-weight:400px;
     margin-top:20px;
@@ -43,5 +45,25 @@ strong {
     margin-right:0;
     margin-left:0;
     width:70%;
-    min-width:300px;
+    min-width:1350px;
 }
+
+#jobtitle {
+    font-size: 1.25em;
+    color:#4D0000;
+    font-weight:600;
+}
+
+#organization {
+    font-size: 1.10em;
+    color:#4D0000
+;
+    font-weight:600;
+}
+#description {
+    font-size: 1em;
+    color:#444;
+    font-weight:400;
+
+}
+
