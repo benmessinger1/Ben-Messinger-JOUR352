@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skate! Newsletter</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Special Elite', cursive;
+        }
+        .row {
+            padding-bottom: 50px;
+        }
+        .column-content {
+            text-align: center; /* Center content in columns */
+        }
+        @media only screen and (max-width: 500px) {
+            h2 {
+                padding-top: 50px;
+            }
+            .btn {
+                background-color: teal; /* Change button background color */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Skate! Newsletter</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Current issue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Past issues</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Follow us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container text-center">
+            <h1>Skate! Newsletter</h1>
+            <p>Stay updated with the latest news in the skateboarding world!</p>
+            <img src="https://images.unsplash.com/photo-1564982752979-3f7bc974d29a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="Skateboarding" class="img-fluid">
+            <div class="mt-3">
+                <a href="#" class="btn btn-dark">Subscribe Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- First Row -->
+        <div class="row">
+            <div class="col-md-6 column-content">
+                <h2>Latest Issue</h2>
+                <p>Check out our latest issue featuring interviews and tips from top skaters.</p>
+                <img src="https://images.unsplash.com/photo-1572776685600-aca8c3456337?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1502&q=80" alt="Latest Issue" class="img-fluid" style="max-width: 100%;">
+                <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+            <div class="col-md-6 column-content">
+                <h2>Upcoming Events</h2>
+                <p>Don't miss our upcoming events and competitions across the country.</p>
+                <img src="https://images.unsplash.com/photo-1621544402532-78c290378588?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="Upcoming Events" class="img-fluid" style="max-width: 100%;">
+                <a href="#" class="btn btn-dark">Join Us</a>
+            </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="row">
+            <div class="col-md-4 column-content">
+                <div class="icon" style="font-size: 3em;">🏆</div>
+                <h3>Competitions</h3>
+                <p>Join our competitions and show off your skills!</p>
+            </div>
+            <div class="col-md-4 column-content">
+                <div class="icon" style="font-size: 3em;">🎨</div>
+                <h3>Design</h3>
+                <p>Check out the latest designs from the skate community.</p>
+            </div>
+            <div class="col-md-4 column-content">
+                <div class="icon" style="font-size: 3em;">📰</div>
+                <h3>News</h3>
+                <p>Stay updated with the latest news and trends in skating.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <span class="text-muted">This is a bootstrap exercise</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
