@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+ 
+/* Masthead Styling */
+.masthead {
+    background: linear-gradient(135deg, #632797, #0099cc);
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+.masthead h1 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 3.5rem;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.masthead p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.25rem;
+    margin: 10px 0 0;
+    font-style: italic;
+}
+.headline-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.headline {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 2.5rem;
+    color: #b22222;
+    letter-spacing: 1px;
+}
+p {
+    font-family: "Times New Roman",
+    Times, serif;
+}
+
+.content p {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 20px;
+}
+
+figure {
+    margin: 20px auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}
+
+
+#byline {
+    text-align: right;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+    margin-right: 20px;
+}
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 1.75rem;
+    font-style: italic;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-left: 5px solid #0099cc;
+    background-color: #f9f9f9;
+    line-height: 1.5;
+    color: #444;
+}
+.related-links {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.related-links h2 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.related-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.related-links li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.related-links li a {
+    text-decoration: none;
+    color: #b22222;
+    transition: color 0.3s ease;
+}
+
+.related-links li a:hover {
+    color: #003366;
+    text-decoration: underline;
+}
