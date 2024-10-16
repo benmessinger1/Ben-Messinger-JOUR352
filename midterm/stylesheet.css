@@ -35,7 +35,8 @@ body {
         font-size: 2.25rem;
         margin: 0;
         }
-/* Publication Header */
+
+        /* Headline section*/
 
         .headline-section {
             text-align: center;
@@ -70,6 +71,7 @@ body {
                 margin: 20px;
             }
 
+    /* Subheading */
 h3 {
     text-align: center;
     font-family: 'Proggy', serif;
@@ -144,7 +146,7 @@ ul li a:hover {
     text-decoration: underline;
 }
 
-/* Publication Header */
+/* Conten Wrapper */
 #content-wrapper {
     max-width: 900px; /* Set the maximum width of the content */
     margin: 0 auto;   /* Center the div horizontally */
