@@ -1,0 +1,50 @@
+<!-- Link to external stylesheet -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.14/c3.min.css" rel="stylesheet">
+
+<!-- Load d3.js and c3.js libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.14/c3.min.js"></script>
+
+<!-- Embed Datawrapper charts -->
+<!-- Chart 1: Indoor and outdoor heat index -->
+<iframe title="Indoor and outdoor heat index during Baltimore heat wave, July 16-22, 2019" 
+        aria-label="Interactive line chart" 
+        id="datawrapper-chart-pxTpc" 
+        src="https://datawrapper.dwcdn.net/pxTpc/1/" 
+        scrolling="no" 
+        frameborder="0" 
+        style="width: 100%; border: none;" 
+        height="403" 
+        data-external="1">
+</iframe>
+
+<!-- Chart 2: Hot weather deaths in Baltimore and Maryland -->
+<iframe title="Hot weather deaths in Baltimore and Maryland" 
+        aria-label="Stacked Bars" 
+        id="datawrapper-chart-8EJd0" 
+        src="https://datawrapper.dwcdn.net/8EJd0/1/" 
+        scrolling="no" 
+        frameborder="0" 
+        style="width: 100%; border: none;" 
+        height="364" 
+        data-external="1">
+</iframe>
+
+<!-- Script to handle responsive iframe height for Datawrapper charts -->
+<script type="text/javascript">
+    (function() {
+        "use strict";
+        window.addEventListener("message", function(event) {
+            if (event.data["datawrapper-height"]) {
+                var iframes = document.querySelectorAll("iframe");
+                for (var chartId in event.data["datawrapper-height"]) {
+                    for (var i = 0; i < iframes.length; i++) {
+                        if (iframes[i].contentWindow === event.source) {
+                            iframes[i].style.height = event.data["datawrapper-height"][chartId] + "px";
+                        }
+                    }
+                }
+            }
+        });
+    })();
+</script>
