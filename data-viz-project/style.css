@@ -1,0 +1,286 @@
+/* Base Styles */
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.75;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Masthead Section */
+.masthead-container {
+    position: relative;
+    width: 100%; /* Full width */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.masthead-image {
+    width: 100%; /* Ensures the image spans the full width */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Scales without distortion */
+}
+
+.masthead-title {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for proper centering */
+    font-family: "Bodoni 72 Oldstyle", serif; /* Apply the requested font */
+    font-size: 4rem; /* Large text for visibility */
+    color: white; /* Contrasts with the background */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds a shadow for readability */
+    z-index: 2; /* Ensures it is above the image */
+}
+
+/* Hero Section */
+.hero-container {
+    position: relative;
+    min-height: 60vh; /* Ensures the hero section covers at least 160% of the viewport height */
+    display: flex;
+    flex-direction: column; /* Stack the image and caption */
+    align-items: center;
+    justify-content: flex-end; /* Aligns caption below the image */
+    overflow: hidden;
+    padding: 0.05rem;
+}
+
+.hero-image {
+    width: 100%; /* Ensures the image spans the full width */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    position: relative;
+    z-index: -1; /* Keeps the image behind other content */
+}
+
+/* Hero Caption */
+.hero-caption {
+    font-family: "Georgia", serif; /* Classic font style */
+    font-size: 1rem; /* Caption size */
+    color: #333; /* Dark text color for readability */
+    text-align: center;
+    margin-top: 0.5rem; /* Spacing above caption */
+    max-width: 800px; /* Limit caption width for readability */
+    line-height: 1.5; /* Improve readability */
+}
+
+
+/* Navbar */
+nav {
+    margin: 10px 0;
+    box-shadow: 3px 3px 20px #005A9C;
+    background-image: linear-gradient(-45deg, #005A9C, #EF3E42, #A5ACAF);
+    animation: myGradient 8s infinite;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    font-family: 'Georgia', serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    border-radius: 20px;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Gradient Animation */
+@keyframes myGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Headers */
+h1 {
+    font-size: 2em;
+    font-family: "Bodoni 72 Oldstyle";
+    color: rgb(0, 90, 156);
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: "Bodoni 72 Oldstyle";
+    color: rgb(0, 90, 156);
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #003366;
+    color: #ffffff;
+}
+
+/* Figures and Images */
+figure {
+    margin: 20px auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Captions */
+figcaption {
+    font-family: "Bodoni 72 Oldstyle", serif;
+    font-size: 0.875rem;
+    color: #555;
+    margin-top: 8px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Pull Quotes */
+blockquote {
+    max-width: 60rem;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+    font-family: "Bodoni 72 Oldstyle", serif;
+    color: #ffffff;
+    background: #005A9C;
+    border: 3px solid #EF3E42;
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+blockquote::before {
+    content: open-quote;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: -1.5rem;
+    left: 1rem;
+    font-family: "Georgia", serif;
+}
+
+/* First Letter of Paragraph */
+first-letter {
+    font-family: "Bodoni 72 Oldstyle";
+    color: rgb(255, 40, 40);
+    font-size: 4.0rem;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .hero-container {
+        min-height: 40vh;
+    }
+}
+
+/* Enhanced Responsiveness */
+@media (max-width: 576px) {
+    .masthead-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-container {
+        min-height: 50vh;
+    }
+
+    .hero-caption {
+        font-size: 0.85rem;
+    }
+
+    nav .nav-link {
+        font-size: 0.9rem;
+    }
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fix iframe responsiveness */
+iframe {
+    width: 100%;
+    min-width: unset !important;
+    border: none;
+}
+
+/* Adjust blockquotes for smaller screens */
+blockquote {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+/* Accessibility: Improve contrast for nav links */
+.nav-link {
+    color: #ffff;
+    text-decoration-color: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+/* Responsive Video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000; /* Optional: Background color */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
